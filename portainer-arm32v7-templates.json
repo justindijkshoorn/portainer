@@ -1,0 +1,190 @@
+[
+  {
+    "type": "container",
+    "title": "Debian",
+    "description": "Linux distribution that's composed entirely of free and open-source software",
+    "categories": ["operating-system"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/debian.png",
+    "image": "arm32v7/debian:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Ubuntu",
+    "description": "Debian-based Linux operating system based on free software",
+    "categories": ["operating-system"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/ubuntu.png",
+    "image": "arm32v7/ubuntu:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Fedora",
+    "description": "Powerful, flexible operating system that includes the best and latest datacenter technologies",
+    "categories": ["operating-system"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/fedora.png",
+    "image": "arm32v7/fedora:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Nginx",
+    "description": "High performance web server",
+    "categories": ["webserver"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/nginx.png",
+    "image": "arm32v7/nginx:latest",
+    "ports": [
+      "80/tcp",
+      "443/tcp"
+    ],
+    "volumes": ["/etc/nginx", "/usr/share/nginx/html"]
+  },
+  {
+    "type": "container",
+    "title": "Httpd",
+    "description": "Open-source HTTP server",
+    "categories": ["webserver"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/httpd.png",
+    "image": "arm32v7/httpd:latest",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/usr/local/apache2/htdocs/"]
+  },
+  {
+    "type": "container",
+    "title": "PostgreSQL",
+    "description": "The most advanced open-source database",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/postgres.png",
+    "image": "arm32v7/postgres:latest",
+    "env": [
+      {
+        "name": "POSTGRES_USER",
+        "label": "Superuser"
+      },
+      {
+        "name": "POSTGRES_PASSWORD",
+        "label": "Superuser password"
+      }
+    ],
+    "ports": [
+      "5432/tcp"
+    ],
+    "volumes": ["/var/lib/postgresql/data"]
+  },
+  {
+    "type": "container",
+    "title": "Redis",
+    "description": "Open-source in-memory data structure store",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/redis.png",
+    "image": "arm32v7/redis:latest",
+    "ports": [
+      "6379/tcp"
+    ],
+    "volumes": ["/data"]
+  },
+  {
+    "type": "container",
+    "title": "Memcached",
+    "description": "Free & open source, high-performance, distributed memory object caching system",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/memcached.png",
+    "image": "arm32v7/memcached:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Solr",
+    "description": "Open-source enterprise search platform",
+    "categories": ["search-engine"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/solr.png",
+    "image": "arm32v7/solr:latest",
+    "ports": [
+      "8983/tcp"
+    ],
+    "volumes": ["/opt/solr/mydata"]
+  },
+  {
+    "type": "container",
+    "title": "Python",
+    "description": "Interpreted, interactive, object-oriented, open-source programming language",
+    "categories": ["programming-language"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/python.png",
+    "image": "arm32v7/python:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Ruby",
+    "description": "Dynamic, reflective, object-oriented, general-purpose, open-source programming language",
+    "categories": ["programming-language"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/ruby.png",
+    "image": "arm32v7/ruby:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Golang",
+    "description": "General purpose, higher-level, imperative programming language",
+    "categories": ["programming-language"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/golang.png",
+    "image": "arm32v7/golang:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Node",
+    "description": "JavaScript-based platform for server-side and networking applications",
+    "categories": ["programming-language"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/node.png",
+    "image": "arm32v7/node:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "php",
+    "description": "While designed for web development, the PHP scripting language also provides general-purpose use",
+    "categories": ["programming-language"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/php.png",
+    "image": "arm32v7/php:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "type": "container",
+    "title": "Redmine",
+    "description": "Open-source project management tool",
+    "categories": ["project-management"],
+    "platform": "linux",
+    "logo": "https://hub.docker.com/public/images/official/redmine.png",
+    "image": "arm32v7/redmine:latest",
+    "ports": [
+      "3000/tcp"
+    ],
+    "volumes": ["/usr/src/redmine/files"]
+  },
+]
