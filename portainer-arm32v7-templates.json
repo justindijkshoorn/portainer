@@ -186,5 +186,5 @@
       "3000/tcp"
     ],
     "volumes": ["/usr/src/redmine/files"]
-  },
+  }
 ]
